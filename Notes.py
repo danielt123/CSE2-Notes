@@ -1,3 +1,4 @@
+'''
 print("Hello world")
 # This is a new line of code
 
@@ -37,7 +38,7 @@ print("%s?! That's really old. You belong in a retirement home." % age)
 # Functions
 
 
-def print_hw():
+def print_hw() -> object:
     print("Hello World.")
     print("Enjoy the day.")
 
@@ -91,10 +92,10 @@ def grade_calc(percentage):
 
 print(grade_calc(59))
 
-'''Write a function called "happy_bday"
+Write a function called "happy_bday"
 that "sings" (prints) Happy birthday
 It must take one parameter called "name"
-'''
+
 
 def happy_bday(name):
     print("Happy Birthday to you" + ',')
@@ -196,3 +197,38 @@ print(string.punctuation)
 strTwo = "ThIs Is A VeRY oDd sEnTeNCe"
 lowercase = strTwo.lower()
 print(lowercase)
+'''
+
+# Dictionaries - Made up of key: value pair
+
+dictionary = {"name": 'Lance', 'age': 26, 'height': 6 * 12 + 2}
+
+# Accessing things from a dictionary
+print(dictionary['name'])
+print(dictionary['age'])
+print(dictionary['height'])
+
+large_dictionary = {
+    'CA': 'California',
+    'AZ': 'Arizona',
+    'NY': 'New York'
+}
+print(large_dictionary['NY'])
+
+larger_dictionary = {
+    'CA': [
+        'Fresno',
+        "San Francisco",
+        "San Jose"
+    ],
+    'AZ': [
+        "Phoenix",
+        "Tuscon"
+    ],
+    'NY': [
+        "New York City",
+        "Brooklyn",
+    ]
+}
+print(larger_dictionary['NY'])
+print(larger_dictionary['NY'][1])
